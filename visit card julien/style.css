@@ -1,0 +1,157 @@
+/* Styles pour les différentes variantes de Poppins */
+.poppins {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+.poppins-italic {
+    font-style: italic;
+}
+
+.poppins-thin { font-weight: 100; }
+.poppins-extralight { font-weight: 200; }
+.poppins-light { font-weight: 300; }
+.poppins-regular { font-weight: 400; }
+.poppins-medium { font-weight: 500; }
+.poppins-semibold { font-weight: 600; }
+.poppins-bold { font-weight: 700; }
+.poppins-extrabold { font-weight: 800; }
+.poppins-black { font-weight: 900; }
+
+.poppins-thin-italic { font-weight: 100; font-style: italic; }
+.poppins-extralight-italic { font-weight: 200; font-style: italic; }
+.poppins-light-italic { font-weight: 300; font-style: italic; }
+.poppins-regular-italic { font-weight: 400; font-style: italic; }
+.poppins-medium-italic { font-weight: 500; font-style: italic; }
+.poppins-semibold-italic { font-weight: 600; font-style: italic; }
+.poppins-bold-italic { font-weight: 700; font-style: italic; }
+.poppins-extrabold-italic { font-weight: 800; font-style: italic; }
+.poppins-black-italic { font-weight: 900; font-style: italic; }
+
+/* Styles généraux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corps de la page */
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Vidéo de fond */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+/* Contenu au-dessus de la vidéo */
+.content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
+}
+
+.wrapper {
+    background-color: rgba(255, 255, 255, 0.5); /* Blanc avec 50% de transparence */
+    background-position: center;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    position: relative;
+}
+
+
+.grey {
+    color: grey;
+}
+
+.profile-top {
+    height : 250px;
+    width: 500px;
+    background-image: url("./julien.jpg") ;
+    background-position: center; /* Centrer l'image */
+    background-size: cover; /* Ajuster l'image pour couvrir le conteneur */
+    background-repeat: no-repeat; /* Éviter les répétitions */
+    position: relative; /* Maintenir la position */
+    opacity: 0.5; /* Transparence à 50% */
+    }
+
+
+.profile-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Styles généraux pour les liens email et ville */
+.email a,
+.ville a {
+    font-size: 14px;
+    color: black; /* Le texte est noir par défaut */
+    text-decoration: none; /* Pas de surlignement sous le texte */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Transition pour la couleur et le surlignement */
+}
+
+/* Ajout d'un peu d'espace entre l'email et la ville */
+.email {
+    margin-bottom: 10px; /* Ajoute un espace sous le lien email */
+}
+
+/* Modification de la couleur et du surlignement des liens au survol */
+.email a:hover,
+.ville a:hover {
+    color: #a54f34; /* Change la couleur en bleu lors du survol */
+    text-decoration: underline; /* Ajoute un soulignement au survol */
+}
+
+/* Style de l'icône dans la section ville */
+.ville ion-icon {
+    color: #000000; /* Couleur bleue par défaut */
+    font-size: 15px; /* Taille de l'icône par défaut */
+    text-decoration: none; /* Surlignement sous le texte */
+    transition: transform 0.3s ease, color 0.3s ease; /* Transition pour le zoom et la couleur */
+}
+
+/* Modification au survol de l'icône */
+.ville ion-icon:hover {
+    color: #a54f34; /* Couleur plus foncée au survol */
+    transform: scale(1.5); /* Agrandir l'icône de 50% */
+}
+
+.email ion-icon{
+    color: #000000; /* Couleur bleue par défaut */
+    font-size: 15px; /* Taille de l'icône par défaut */
+    text-decoration: none; /* Surlignement sous le texte */
+    transition: transform 0.3s ease, color 0.3s ease; /* Transition pour le zoom et la couleur */
+}
+
+.email ion-icon:hover {
+    color: #a54f34; /* Couleur plus foncée au survol */
+    transform: scale(1.5); /* Agrandir l'icône de 50% */
+}
